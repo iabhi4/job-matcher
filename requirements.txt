@@ -3,5 +3,5 @@ uvicorn
 pymongo
 python-dotenv
 openai
-sentence_transformers
 pyswip
+python-multipart

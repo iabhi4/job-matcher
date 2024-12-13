@@ -1,16 +1,20 @@
 from fastapi import FastAPI
-from utils.routes import router
+from routes.user import userRouter
+from routes.rules import rulesRouter
+from routes.dashboard import dashboardRouter
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Allow requests from your frontend
+    allow_origins=["http://localhost:3000"],  # Frontend URL
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
-app.include_router(router)
+app.include_router(userRouter)
+app.include_router(rulesRouter)
+app.include_router(dashboardRouter)
 
 @app.get("/")
 async def root():

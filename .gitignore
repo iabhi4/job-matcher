@@ -2,3 +2,7 @@
 logs
 __pycache__
 .env
+node_modules
+.next
+testFile.py
+matching_info.pl

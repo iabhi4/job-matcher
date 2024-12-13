@@ -1,0 +1,82 @@
+.dashboardContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .dashboardHeading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .newMatchButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .newMatchButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .cardContent {
+    text-align: center;
+  }
+  
+  .companyName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .jobTitle {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .jobLocation {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #777;
+  }
+  
+  .matchScore {
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff;
+  }
